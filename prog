@@ -1,0 +1,145 @@
+val1 = "Sachin Tendulkar"
+marks1 = input("Enter your marks in subject 1: ")
+marks1 = int(marks1)
+marks2 = int(input("Enter your marks in subject 2: "))
+marks3 = int(input("Enter your marks in subject 3: "))
+sum = marks1 +marks2+marks3
+print("Total marks obtained is ",sum)
+avg = sum/3
+print(f"{val1} has scored a total of {sum} marks with an average of {avg:.2f}")
+
+if avg >=90:
+    print("Congratulations, you won President Medal")
+
+#if avg >=40, Pass and its not then say Fail
+if avg >=40:
+    print("Result: PASS")
+else:   #default condition , executed only when if is false
+    print("Result: FAIL")
+######################
+name= "kevin"
+nationality="American"
+age= "23 years"
+print(f"{name} with age {age} old is an {nationality} citizen"  )
+
+#############################
+number= int(input("enter the number:"))
+dividend= number//2
+quotient= number%2
+print(f"The dividend of {number} is {dividend} and quotient is {quotient} ")
+##########################
+number1= int(input("enter the number1:"))
+number2= int(input("enter the number2:"))
+division1 = number1/4
+division2 = number2/4
+print(f"The number1 in decimal format is {division1} and number2 in 22mixed format is {division2:.2f} ")
+###########################
+length= int(input("length of rectangle:" ))
+breadth= int(input("breadth of rectangle:"))
+area = length*breadth
+perimeter = 2*(length + breadth)
+print(f"The rectangle of length {length} and breadth75 {breadth} has area of {area} and perimeter of {perimeter}. ")
+############################
+side1= int(input("side 1 of trinagle:"))
+side2 = int(input("side 2 of traingle:"))
+side3 = int(input("side 3 of trinagle:"))
+if ((side1 > 0 and side2 > 0 and side3 > 0) and(side1 == (side2 + side3) or side2 == (side1 + side3) or  side3== (side1 + side2))):
+    print("The trinagle is  Right angle trinagle")
+if side1 == side2 == side3:
+    print("The triangle is Equilateral triangle")
+elif side1==side2 or side2== side3 or side1 == side3:
+    print("The trinagle is Isoceles trinagle")
+else:
+    print("The trinagle is scalene trinagle")
+##############################
+
+number = int(input("Enter the number of student:"))
+if number>= 80:
+    print("Grade A")
+elif number >=70:
+    print("Grade B")
+elif number>60:
+    print("Grade C")
+elif number > 40:
+    print("Grade D")
+else:
+    print("failed")
+###############################
+
+chr(input("Taxcode"))
+if taxCode == T:
+    price +=  (price * (taxRate / 100.0))
+print("taxrate")
+#################################
+#list
+list=[2, 4, 6,8,10]
+print(sum(list))
+#
+list=[4,6,8,10]
+print(multiply(list))
+#
+list=[4,6,8,10]
+product=1
+for i in list:
+    product= product*i
+print(f"The product is {product}")
+#
+list = [10,12,15,28]
+largest=1
+for i in list:
+    if i>1:
+        largest = i
+print(f"The largest number is {largest}")
+#
+l=[12,4,6,2,1]
+min1 = l[0]
+for i in range(len(l)):
+   if l[i] < min1:
+       min1 = l[i]
+print(f"The smallest number is {min1}")
+#
+list= ['abc', 'xyz', 'aba', '1221']
+counter=0
+for i in list:
+    if len(i) > 1 and i[0] == i[-1]:
+       counter+=1
+print(f"The counter is {counter}")
+# tuples
+list=[(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]
+length= len(list)
+for i in range(0,length):
+     for j in range(0,length-i-1):
+        if(list[j][-1] > list[j + 1][-1]):
+            counter = list[j]
+            list[j] = list[j + 1]
+            list[j + 1] = counter
+print(list)
+#remove duplicate
+list= [10,20,20,30,30,40,40,50,50]
+result =[]
+for i in list:
+    if i not in result:
+        result.append(i)
+print(result)
+#to check list is empty
+list=[]
+if not list:
+    print("list is empty")
+else:
+    print("list is filled")
+###################
+
+ #A
+#BC
+#DEF
+#GHIJ
+#KLMNO
+
+a=5
+num=65
+for k in range(1,a):
+    for j in range(0,k):
+        ch=chr(num)
+        print(ch,end=' ')
+        num+=1
+    print(" ")
